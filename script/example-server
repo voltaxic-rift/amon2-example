@@ -13,19 +13,12 @@ use URI::Escape;
 use File::Path ();
 
 my $app = builder {
-    enable 'Plack::Middleware::Static',
-        path => qr{^(?:/static/)},
-        root => File::Spec->catdir(dirname(__FILE__), '..');
-    enable 'Plack::Middleware::Static',
-        path => qr{^(?:/robots\.txt|/favicon\.ico)$},
-        root => File::Spec->catdir(dirname(__FILE__), '..', 'static');
     enable 'Plack::Middleware::ReverseProxy';
-
     Example::Web->to_app();
 };
 unless (caller) {
     my $port        = 5000;
-    my $host        = '127.0.0.1';
+    my $host        = '0.0.0.0';
     my $max_workers = 4;
 
     require Getopt::Long;

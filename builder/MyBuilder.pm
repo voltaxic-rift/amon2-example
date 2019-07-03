@@ -10,16 +10,6 @@ use parent qw(Module::Build);
 sub ACTION_code {
     my $self = shift;
     my $share_prefix = File::Spec->catdir($self->blib, qw/lib auto share dist/, 'Example');
-    for my $dir (qw(tmpl static)) {
-        next unless -d $dir;
-        for my $src (@{$self->rscan_dir($dir)}) {
-            next if -d $src;
-            $self->copy_if_modified(
-                from => $src,
-                to_dir => File::Spec->catfile( $share_prefix )
-            );
-        }
-    }
     $self->SUPER::ACTION_code();
 }
 

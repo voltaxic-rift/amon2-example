@@ -12,22 +12,7 @@ sub dispatch {
 }
 
 # load plugins
-__PACKAGE__->load_plugins(
-    'Web::FillInFormLite',
-    'Web::JSON',
-    '+Example::Web::Plugin::Session',
-);
-
-# setup view
-use Example::Web::View;
-{
-    sub create_view {
-        my $view = Example::Web::View->make_instance(__PACKAGE__);
-        no warnings 'redefine';
-        *Example::Web::create_view = sub { $view }; # Class cache.
-        $view
-    }
-}
+__PACKAGE__->load_plugins('Web::JSON');
 
 # for your security
 __PACKAGE__->add_trigger(
