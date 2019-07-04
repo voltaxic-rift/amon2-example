@@ -12,6 +12,10 @@ requires 'Test::WWW::Mechanize::PSGI';
 requires 'Time::Piece', '1.20';
 requires 'perl', '5.010_001';
 
+on develop => sub {
+    requires 'Pry';
+};
+
 on configure => sub {
     requires 'Module::Build', '0.38';
     requires 'Module::CPANfile', '0.9010';

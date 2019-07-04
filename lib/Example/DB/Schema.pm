@@ -8,7 +8,7 @@ use Teng::Schema::Declare;
 base_row_class 'Example::DB::Row';
 
 table {
-    name 'member';
+    name 'tasks';
     pk 'id';
     columns qw(id name);
 };

@@ -12,7 +12,9 @@ sub dispatch {
 }
 
 # load plugins
-__PACKAGE__->load_plugins('Web::JSON');
+__PACKAGE__->load_plugins(
+    'Web::JSON' => { canonical => 1 }
+);
 
 # for your security
 __PACKAGE__->add_trigger(
