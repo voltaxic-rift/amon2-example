@@ -1,8 +1,7 @@
 FROM perl:5.28.1-threaded
 ENV LANG C.UTF-8
 
-RUN cpanm Carton && \
-    cpanm Amon2
+RUN cpanm Carton
 
 ARG uid=1000
 ARG gid=1000
