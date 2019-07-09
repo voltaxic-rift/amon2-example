@@ -3,14 +3,13 @@ use strict;
 use warnings;
 use utf8;
 
-use Teng::Schema::Declare;
+use DBIx::Schema::DSL;
 
-base_row_class 'Example::DB::Row';
+database 'SQLite';
 
-table {
-    name 'tasks';
-    pk 'id';
-    columns qw(id name);
+create_table 'tasks' => columns {
+    integer 'id', primary_key, auto_increment;
+    varchar 'name';
 };
 
 1;

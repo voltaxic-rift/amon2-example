@@ -13,9 +13,9 @@ any '/' => sub {
 get '/tasks' => sub {
     my $c = shift;
 
-    my $tasks = [map {$_->{row_data}} ($c->db->search('tasks'))];
+    my $tasks = $c->db->select('tasks');
 
-    return $c->render_json($tasks);
+    return $c->render_json($tasks->row_datas);
 };
 
 post '/tasks' => sub {

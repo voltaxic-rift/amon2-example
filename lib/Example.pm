@@ -11,15 +11,12 @@ use parent qw/Amon2/;
 # Enable project local mode.
 __PACKAGE__->make_local_context();
 
-my $schema = Example::DB::Schema->instance;
-
 sub db {
     my $c = shift;
     if (!exists $c->{db}) {
         my $conf = $c->config->{DBI}
             or die "Missing configuration about DBI";
         $c->{db} = Example::DB->new(
-            schema       => $schema,
             connect_info => [@$conf],
             # I suggest to enable following lines if you are using mysql.
             # on_connect_do => [

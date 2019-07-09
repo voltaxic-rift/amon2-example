@@ -7,7 +7,7 @@ requires 'Module::Functions', '2';
 requires 'Plack::Middleware::ReverseProxy', '0.09';
 requires 'Router::Boom', '0.06';
 requires 'Starlet', '0.20';
-requires 'Teng', '0.18';
+requires 'Aniki', '1.06';
 requires 'Test::WWW::Mechanize::PSGI';
 requires 'Time::Piece', '1.20';
 requires 'perl', '5.010_001';
