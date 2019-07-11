@@ -1,4 +1,6 @@
 requires 'Amon2', '6.13';
+requires 'Anego', '0.02';
+requires 'Aniki', '1.06';
 requires 'Crypt::CBC';
 requires 'Crypt::Rijndael';
 requires 'DBD::SQLite', '1.33';
@@ -7,7 +9,6 @@ requires 'Module::Functions', '2';
 requires 'Plack::Middleware::ReverseProxy', '0.09';
 requires 'Router::Boom', '0.06';
 requires 'Starlet', '0.20';
-requires 'Aniki', '1.06';
 requires 'Test::WWW::Mechanize::PSGI';
 requires 'Time::Piece', '1.20';
 requires 'perl', '5.010_001';

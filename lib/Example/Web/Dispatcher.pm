@@ -22,11 +22,11 @@ post '/tasks' => sub {
     my $c = shift;
 
     my $name = $c->req->parameters->{name};
-    my $task = $c->db->insert(tasks => {
+    my $task = $c->db->insert_and_fetch_row(tasks => {
         name => $name
     });
 
-    return $c->render_json($task->{row_data});
+    return $c->render_json($task->row_data);
 };
 
 1;

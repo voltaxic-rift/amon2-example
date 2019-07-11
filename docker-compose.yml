@@ -8,5 +8,7 @@ services:
     command: carton exec -- plackup -L Shotgun script/example-server
     volumes:
       - .:/app
+    environment:
+      PLACK_ENV: development
     stdin_open: true
     tty: true

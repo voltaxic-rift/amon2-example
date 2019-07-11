@@ -5,6 +5,6 @@
 ```
 docker-compose build
 docker-compose run --rm app carton install
-sqlite3 db/development.db < sql/sqlite.sql
+docker-compose run --rm app carton exec anego migrate
 docker-compose up -d
 ```

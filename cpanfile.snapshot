@@ -79,6 +79,36 @@ DISTRIBUTIONS
       URI::QueryParam 0
       parent 0.223
       perl 5.008001
+  Anego-0.02
+    pathname: P/PA/PAPIX/Anego-0.02.tar.gz
+    provides:
+      Anego 0.02
+      Anego::CLI undef
+      Anego::CLI::Diff undef
+      Anego::CLI::Help undef
+      Anego::CLI::Migrate undef
+      Anego::CLI::Status undef
+      Anego::CLI::Version undef
+      Anego::Config undef
+      Anego::Git undef
+      Anego::Logger undef
+      Anego::Task::Diff undef
+      Anego::Task::GitLog undef
+      Anego::Task::SchemaLoader undef
+      Anego::Util undef
+    requirements:
+      DBI 0
+      DBIx::Schema::DSL 0
+      Digest::MD5 0
+      Exporter 0
+      File::Spec 0
+      Getopt::Long 0
+      Git::Repository 0
+      Module::Build::Tiny 0.035
+      SQL::Translator 0
+      Term::ANSIColor 0
+      Try::Tiny 0
+      perl 5.008001
   Aniki-1.06
     pathname: K/KA/KARUPA/Aniki-1.06.tar.gz
     provides:
@@ -1363,6 +1393,41 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.008001
+  Git-Repository-1.323
+    pathname: B/BO/BOOK/Git-Repository-1.323.tar.gz
+    provides:
+      Git::Repository 1.323
+      Git::Repository::Command 1.323
+      Git::Repository::Plugin 1.323
+      Test::Git 1.323
+    requirements:
+      Carp 0
+      Cwd 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      File::Spec::Functions 0
+      File::Temp 0
+      Git::Version::Compare 1.001
+      IO::Handle 0
+      Scalar::Util 0
+      System::Command 1.118
+      Test::Builder 0
+      namespace::clean 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Git-Version-Compare-1.004
+    pathname: B/BO/BOOK/Git-Version-Compare-1.004.tar.gz
+    provides:
+      Git::Version::Compare 1.004
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.006
+      strict 0
+      warnings 0
   HTML-FillInForm-Lite-1.15
     pathname: G/GF/GFUJI/HTML-FillInForm-Lite-1.15.tar.gz
     provides:
@@ -1616,6 +1681,19 @@ DISTRIBUTIONS
       Encode 2.10
       Exporter 5.57
       ExtUtils::MakeMaker 6.30
+  IPC-Run-20180523.0
+    pathname: T/TO/TODDR/IPC-Run-20180523.0.tar.gz
+    provides:
+      IPC::Run 20180523.0
+      IPC::Run::Debug 20180523.0
+      IPC::Run::IO 20180523.0
+      IPC::Run::Timer 20180523.0
+      IPC::Run::Win32Helper 20180523.0
+      IPC::Run::Win32IO 20180523.0
+      IPC::Run::Win32Pump 20180523.0
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0.47
   IPC-Signal-1.00
     pathname: R/RO/ROSCH/IPC-Signal-1.00.tar.gz
     provides:
@@ -2628,6 +2706,28 @@ DISTRIBUTIONS
     requirements:
       Carp 0
       ExtUtils::MakeMaker 6.17
+      constant 0
+      perl 5.006
+      strict 0
+      warnings 0
+  System-Command-1.119
+    pathname: B/BO/BOOK/System-Command-1.119.tar.gz
+    provides:
+      System::Command 1.119
+      System::Command::Reaper 1.119
+    requirements:
+      Carp 0
+      Cwd 0
+      Data::Dumper 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      IO::Handle 0
+      IO::Select 0
+      IPC::Run 0
+      List::Util 0
+      POSIX 0
+      Scalar::Util 0
+      Symbol 0
       constant 0
       perl 5.006
       strict 0
