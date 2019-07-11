@@ -366,6 +366,17 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       Test::More 0
+  Clone-PP-1.07
+    pathname: N/NE/NEILB/Clone-PP-1.07.tar.gz
+    provides:
+      Clone::PP 1.07
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.006
+      strict 0
+      vars 0
+      warnings 0
   Config-INI-0.025
     pathname: R/RJ/RJBS/Config-INI-0.025.tar.gz
     provides:
@@ -644,6 +655,29 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 6.42
       Test::More 0.96
       perl 5.008001
+  Data-Printer-0.40
+    pathname: G/GA/GARU/Data-Printer-0.40.tar.gz
+    provides:
+      DDP undef
+      Data::Printer 0.40
+      Data::Printer::Filter undef
+      Data::Printer::Filter::DB undef
+      Data::Printer::Filter::DateTime undef
+      Data::Printer::Filter::Digest undef
+    requirements:
+      Carp 0
+      Clone::PP 0
+      ExtUtils::MakeMaker 0
+      Fcntl 0
+      File::HomeDir 0.91
+      File::Spec 0
+      File::Temp 0
+      Package::Stash 0.3
+      Scalar::Util 0
+      Sort::Naturally 0
+      Term::ANSIColor 3
+      Test::More 0.88
+      version 0.77
   Data-Section-Simple-0.07
     pathname: M/MI/MIYAGAWA/Data-Section-Simple-0.07.tar.gz
     provides:
@@ -2552,6 +2586,13 @@ DISTRIBUTIONS
       POSIX 0
       strict 0
       warnings 0
+  Sort-Naturally-1.03
+    pathname: B/BI/BINGOS/Sort-Naturally-1.03.tar.gz
+    provides:
+      Sort::Naturally 1.03
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5
   Specio-0.43
     pathname: D/DR/DROLSKY/Specio-0.43.tar.gz
     provides:
@@ -2767,6 +2808,16 @@ DISTRIBUTIONS
       Scalar::Util 0
       parent 0
       perl 5.008_001
+  Term-ReadLine-Gnu-1.36
+    pathname: H/HA/HAYASHI/Term-ReadLine-Gnu-1.36.tar.gz
+    provides:
+      Term::ReadLine::Gnu 1.36
+      Term::ReadLine::Gnu::AU 1.36
+      Term::ReadLine::Gnu::Var 1.36
+      Term::ReadLine::Gnu::XS 1.36
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008001
   Test-Deep-1.128
     pathname: R/RJ/RJBS/Test-Deep-1.128.tar.gz
     provides:

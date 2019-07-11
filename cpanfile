@@ -9,11 +9,13 @@ requires 'Module::Functions', '2';
 requires 'Plack::Middleware::ReverseProxy', '0.09';
 requires 'Router::Boom', '0.06';
 requires 'Starlet', '0.20';
+requires 'Term::ReadLine::Gnu';
 requires 'Test::WWW::Mechanize::PSGI';
 requires 'Time::Piece', '1.20';
 requires 'perl', '5.010_001';
 
 on develop => sub {
+    requires 'Data::Printer';
     requires 'Pry';
 };
 
