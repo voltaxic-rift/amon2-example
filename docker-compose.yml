@@ -5,7 +5,7 @@ services:
     build: .
     ports:
       - '5000:5000'
-    command: carton exec -- plackup -L Shotgun script/example-server
+    command: carton exec -- plackup -R lib -Ilib script/example-server
     volumes:
       - .:/app
     environment:
